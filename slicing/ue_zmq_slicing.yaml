@@ -47,7 +47,7 @@ release = 15
 ue_category = 4
 
 [nas]
-apn = internet
+apn = srsapn
 apn_protocol = ipv4
 
 [gw]
@@ -56,4 +56,4 @@ ip_devname = tun_srsue
 ip_netmask = 255.255.255.0
 
 [gui]
-enable = true
+enable = false
