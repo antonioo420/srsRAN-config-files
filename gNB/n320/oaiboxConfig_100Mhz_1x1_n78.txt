@@ -2,7 +2,11 @@
 Config OAIBOX
 
 banda: 78
+frecuencia:620544
 ancho de banda: 100Mhz
 sample rate: 122.88 Mhz
 TDD Slots: DDDFU
 MIMO: 1x1
+ganancia: 60 tx y rx
+mgmt_addr=192.168.10.2,type=n3xx,product=n320,serial=329CA5A,name=ni-n3xx-329CA5A,fpga=XG,claimed=False,model=N320,addr=192.168.10.2,second_addr=192.168.20.2,clock_source=internal,time_source=internal,master_clock_rate=245760000.000000
+scs: 30
