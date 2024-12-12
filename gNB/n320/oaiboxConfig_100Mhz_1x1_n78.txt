@@ -1,0 +1,8 @@
+
+Config OAIBOX
+
+banda: 78
+ancho de banda: 100Mhz
+sample rate: 122.88 Mhz
+TDD Slots: DDDFU
+MIMO: 1x1
