@@ -1,0 +1,51 @@
+cu_cp:
+  amf:
+    addr: 127.0.1.100
+    port: 38412
+    bind_addr: 127.0.0.1
+    supported_tracking_areas:
+      - tac: 7
+        plmn_list:
+          - plmn: "00101"
+            tai_slice_support_list:
+              - sst: 1
+
+ru_sdr:
+  device_driver: uhd
+  device_args: type=n3xx, master_clock_rate=245760000
+  clock: internal
+  sync: internal
+  srate: 30.72
+  tx_gain: 50
+  rx_gain: 40
+
+cell_cfg:
+  dl_arfcn: 667200
+  band: 77
+  channel_bandwidth_MHz: 20
+  common_scs: 30
+  plmn: "00101"
+  tac: 7
+  pci: 1
+  nof_antennas_dl: 1
+  nof_antennas_ul: 1
+  tdd_ul_dl_cfg:
+    dl_ul_tx_period: 10
+    nof_dl_slots: 5
+    nof_dl_symbols: 9
+    nof_ul_slots: 4
+    nof_ul_symbols: 0
+  pusch:
+    mcs_table: qam256
+  pdsch:
+    mcs_table: qam256
+
+log:
+  filename: /tmp/gnb.log
+  all_level: info
+
+pcap:
+  mac_enable: false
+  mac_filename: /tmp/gnb_mac.pcap
+  ngap_enable: false
+  ngap_filename: /tmp/gnb_ngap.pcap
