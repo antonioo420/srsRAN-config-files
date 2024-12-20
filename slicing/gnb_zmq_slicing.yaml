@@ -18,6 +18,8 @@ cu_cp:
                 sd: 1
               - sst: 2
                 sd: 2
+              - sst: 3
+                sd: 3
   inactivity_timer: 7200            # Sets the UE/PDU Session/DRB inactivity timer to 7200 seconds. Supported: [1 - 7200].
 
 ru_sdr:
@@ -33,6 +35,8 @@ cell_cfg:
       sd: 0x000001
     - sst: 2
       sd: 0x000002
+    - sst: 3
+      sd: 0x000003
   dl_arfcn: 368500                  # ARFCN of the downlink carrier (center frequency).
   band: 3                           # The NR band.
   channel_bandwidth_MHz: 10         # Bandwith in MHz. Number of PRBs will be automatically derived.
@@ -48,6 +52,9 @@ cell_cfg:
       dci_format_0_1_and_1_1: false # Set correct DCI format (fallback)
   prach:
     prach_config_index: 1           # Sets PRACH config to match what is expected by srsUE
+    total_nof_ra_preambles: 64      # Sets number of available PRACH preambles
+    nof_ssb_per_ro: 1               # Sets the number of SSBs per RACH occasion.
+    nof_cb_preambles_per_ssb: 64    # Sets the number of contention based preambles per SSB.
 
 log:
   filename: /tmp/gnb.log            # Path of the log file.
