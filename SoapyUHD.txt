@@ -1,0 +1,9 @@
+gitaca@gitaca-core:~/srsVanilla5G/SoapyUHD$ git log --name-status HEAD^..HEAD
+commit 1f7b6fa245f782e5d18453f5cbc6d9f27e6b26df (HEAD -> master, origin/master, origin/HEAD)
+Author: Josh Blum <josh@joshknows.com>
+Date:   Sun Nov 14 11:42:55 2021 -0600
+
+    Set C++14 which is required in UHD headers
+
+M       CMakeLists.txt
+M       Changelog.txt

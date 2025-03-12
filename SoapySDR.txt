@@ -1,0 +1,25 @@
+######################################################
+##     Soapy SDR -- the SDR abstraction library     ##
+######################################################
+
+Lib Version: v0.8.1-gbb33b2d2
+API Version: v0.8.200
+ABI Version: v0.8-3
+Install root: /usr/local
+Search path:  /usr/local/lib/SoapySDR/modules0.8-3
+Module found: /usr/local/lib/SoapySDR/modules0.8-3/libbladeRFSupport.so (0.4.1-85f6dc5)
+Module found: /usr/local/lib/SoapySDR/modules0.8-3/libuhdSupport.so     (0.4.1-1f7b6fa)
+Available factories... bladerf, uhd
+Available converters...
+ -  CF32 -> [CF32, CS16, CS8, CU16, CU8]
+ -  CS16 -> [CF32, CS16, CS8, CU16, CU8]
+ -  CS32 -> [CS32]
+ -   CS8 -> [CF32, CS16, CS8, CU16, CU8]
+ -  CU16 -> [CF32, CS16, CS8]
+ -   CU8 -> [CF32, CS16, CS8]
+ -   F32 -> [F32, S16, S8, U16, U8]
+ -   S16 -> [F32, S16, S8, U16, U8]
+ -   S32 -> [S32]
+ -    S8 -> [F32, S16, S8, U16, U8]
+ -   U16 -> [F32, S16, S8]
+ -    U8 -> [F32, S16, S8]
